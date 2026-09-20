@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>باشگاه شطرنج صبا</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #0d1117;
+    color: white;
+}
+
+/* Header */
+
+header {
+    min-height: 520px;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        linear-gradient(rgba(5,8,12,0.75), rgba(5,8,12,0.9)),
+        radial-gradient(circle at center, #394b5f, #0d1117 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chess-icon {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+header h1 span {
+    color: #d6a84f;
+}
+
+header p {
+    font-size: 20px;
+    color: #ddd;
+    max-width: 650px;
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: #d6a84f;
+    color: #111;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(20,24,30,0.97);
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6a84f;
+}
+
+/* Sections */
+
+.container {
+    width: 88%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 30px;
+    color: #d6a84f;
+}
+
+.title p {
+    color: #aaa;
+}
+
+/* About */
+
+.about {
+    background: #151a21;
+    border-radius: 20px;
+    padding: 35px;
+    line-height: 2.2;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #151a21;
+    padding: 30px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #292f38;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d6a84f;
+}
+
+.card .icon {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #d6a84f;
+}
+
+/* Competition */
+
+.competition {
+    background: linear-gradient(135deg, #191f27, #10141a);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.competition h2 {
+    color: #d6a84f;
+}
+
+.competition p {
+    line-height: 2;
+    color: #ddd;
+}
+
+/* Contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-box {
+    background: #151a21;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: #d6a84f;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #080b0f;
+    color: #888;
+}
+
+/* Mobile */
+
+@media(max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+    <div class="chess-icon">♟</div>
+
+    <h1>باشگاه شطرنج <span>صبا</span></h1>
+
+    <p>
+        جایی برای یادگیری، تمرین، رقابت و ساختن قهرمانان آینده شطرنج
+    </p>
+
+    <a href="#contact" class="button">
+        شروع یادگیری ♟
+    </a>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="#about">درباره ما</a>
+    <a href="#classes">کلاس‌ها</a>
+    <a href="#competition">مسابقات</a>
+    <a href="#contact">تماس با ما</a>
+
+</nav>
+
+
+<div class="container">
+
+
+<!-- About -->
+
+<section id="about">
+
+    <div class="title">
+        <h2>درباره باشگاه</h2>
+        <p>یک قدم تا پیشرفت در شطرنج</p>
+    </div>
+
+    <div class="about">
+
+        <p>
+باشگاه شطرنج صبا با هدف آموزش اصولی شطرنج،
+            پرورش استعدادهای جوان و ایجاد محیطی مناسب برای
+            یادگیری و رقابت فعالیت می‌کند.
+        </p>
+
+        <p>
+            در باشگاه صبا بازیکنان در سطوح مختلف می‌توانند
+            مهارت‌های خود را تقویت کنند، با دیگر بازیکنان
+            به رقابت بپردازند و برای مسابقات آماده شوند.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Classes -->
+
+<section id="classes">
+
+    <div class="title">
+        <h2>کلاس‌های آموزشی</h2>
+        <p>برای هر سطح، یک مسیر پیشرفت</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">♙</div>
+
+            <h3>مبتدی</h3>
+
+            <p>
+                آموزش قوانین شطرنج،
+                نحوه حرکت مهره‌ها و اصول اولیه بازی.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">♞</div>
+
+            <h3>متوسط</h3>
+
+            <p>
+                آموزش تاکتیک‌ها، استراتژی‌ها،
+                افتتاحیه‌ها و تحلیل بازی.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">♛</div>
+
+            <h3>پیشرفته</h3>
+
+            <p>
+                تمرین حرفه‌ای، تحلیل عمیق بازی‌ها
+                و آمادگی برای مسابقات.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Competition -->
+
+<section id="competition">
+
+    <div class="competition">
+
+        <h2>🏆 مسابقات باشگاه</h2>
+
+        <p>
+            برگزاری مسابقات درون‌باشگاهی فرصتی مناسب
+            برای کسب تجربه و افزایش اعتمادبه‌نفس بازیکنان است.
+        </p>
+
+        <p>
+            باشگاه شطرنج صبا از خانواده‌های نوآموزان
+            جهت همکاری در برگزاری مسابقات درون‌باشگاهی دعوت می‌نماید.
+        </p>
+
+        <a href="#contact" class="button">
+            اطلاعات بیشتر
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <div class="title">
+
+        <h2>ارتباط با ما</h2>
+
+        <p>
+            برای ثبت‌نام و دریافت اطلاعات بیشتر با ما در تماس باشید.
+        </p>
+
+    </div>
+
+
+    <div class="contact">
+
+        <div class="contact-box">
+
+            <h3>📞 شماره تماس</h3>
+
+            <p>
+                09163464796
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <h3>♟ باشگاه شطرنج صبا</h3>
+
+            <p>
+                بازی کردن • تمرین کردن • پیشرفت کردن
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 باشگاه شطرنج صبا
+    </p>
+
+    <p>
+        طراحی شده برای علاقه‌مندان به شطرنج ♟
+    </p>
+
+</footer>
+
+</body>
+</html>
